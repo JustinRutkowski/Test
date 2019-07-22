@@ -1,21 +1,45 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<nav class="navbar navbar-light navbar-expand-md sticky-top navigation-clean-button" style="height:80px;background-color:#37434d;color:#ffffff;">
+    <div class="container-fluid"><a href="#" class="navbar-brand"><i class="fas fa-bread-slice"></i> Menugate</a><button data-toggle="collapse" data-target="#navcol-1" class="navbar-toggler"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div style="background: #37434d" class="collapse navbar-collapse" id="navcol-1">
+            <ul class="nav navbar-nav ml-auto">
+                <li role="presentation" class="nav-item"><a routerLink='/einstellungen' class="nav-link active" style="color:#ffffff;"><i class="fas fa-home"></i> Home</a></li>
+                <li role="presentation" class="nav-item"><a routerLink='/einstellungen' class="nav-link active" style="color:#ffffff;"><i class="fas fa-wpexplorer"></i> Explore</a></li>
+                <li role="presentation" class="nav-item"><a routerLink='/einstellungen' class="nav-link active" style="color:#ffffff;"><i class="fas fa-star"></i> Features</a></li>
+                <li role="presentation" class="nav-item"><a routerLink='/einstellungen' class="nav-link active" style="color:#ffffff;"><i class="fas fa-user-circle"></i> Portfolio</a></li>
+                <li role="presentation" class="nav-item"><a routerLink='/einstellungen' class="nav-link active" style="color:#ffffff;"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-<router-outlet></router-outlet>
+<hr>
+
+<!-- <hr>
+<div class="navbar">
+    <ul class="nav nav-tabs navbar">
+        <li role="presentation" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"> <a routerLink='/essen'>Navigation</a></li>
+        <li role="presentation" routerLinkActive="active"> <a routerLink='/verwaltung'>Navigation</a></li>
+        <li role="presentation" routerLinkActive="active"> <a routerLink='/einstellungen'>Navigation</a></li>
+        <li role="presentation" routerLinkActive="active"> <a routerLink='/einstellungen'>Navigation</a></li>
+
+    </ul>
+</div> -->
+
+<div class="form-group">
+    <div class="switch-toggle switch-3 switch-candy">
+        <input id="Tag" name="state-d" type="radio">
+        <label for="Tag" routerLink='/tag'>Tag</label>
+
+        <input id="Woche" name="state-d" type="radio">
+        <label for="Woche" routerLink='/woche'>Woche</label>
+
+        <input id="Monat" name="state-d" type="radio">
+        <label for="Monat" routerLink='/monat'>Monat</label>
+
+        <a></a>
+    </div>
+</div>
+
+<router-outlet>
+
+</router-outlet>

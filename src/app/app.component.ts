@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'test';
+  model: any = {};
+  
+  public options = [
+  {value: "Tag", id:"Tag"},
+  {value: "Wcohe", id:"Woche"},
+  {value: "Monat", id:"Monat"},
+]
 }
